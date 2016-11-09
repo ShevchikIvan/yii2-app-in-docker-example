@@ -1,10 +1,5 @@
 version: '1.0'
 steps:
-    build-step-name:
-        type: build
-        image-name: ShevchikIvan/yii2-app-in-docker-example
-        dockerfile: Dockerfile
-        tag: latest
     launch-env:
         type: launch-composition
         composition:
@@ -67,3 +62,4 @@ steps:
               image: selenium/node-firefox
               links:
                 - seleniumhub:hub
+                - nginx
