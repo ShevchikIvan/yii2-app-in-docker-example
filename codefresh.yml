@@ -67,4 +67,3 @@ steps:
               image: selenium/node-firefox
               links:
                 - seleniumhub:hub
-                - nginx
